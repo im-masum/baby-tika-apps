@@ -239,8 +239,11 @@
  .lang-switch {
      display: flex;
      gap: 6px;
-     align-items: center
+     align-items: center;
+     cursor: pointer;
  }
+
+
 
  @media(max-width:980px) {
      .grid {
