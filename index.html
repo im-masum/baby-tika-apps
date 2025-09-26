@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="bn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="শিশু টিকা রিমাইন্ডার - শিডিউল সংরক্ষণ করুন এবং রিমাইন্ডার পান" />
+    <title>শিশু টিকা রিমাইন্ডার</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    
+    <!-- Google libs -->
+    <script src="https://apis.google.com/js/api.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div style="display:flex;gap:12px;align-items:center">
+                <div class="card" style="padding:10px 14px;display:flex;align-items:center;gap:12px">
+                    <img src=""alt="logo" />
+                    <div>
+                        <h1 id="appTitle">শিশু টিকা রিমাইন্ডার</h1>
+                        <div id="appSubtitle" style="font-size:.85rem;color:var(--muted)">টিকা শিডিউল সংরক্ষণ করুন,
+                            রিমাইন্ডার পেয়ে যান</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="lang-switch card"
+                    style="padding:8px;border-radius:999px;display:flex;align-items:center;gap:8px;border:1px solid rgba(199, 185, 185, 0.06);padding: 10px 20px;">
+                    <select id="langSelect" style="min-width:110px;border:none;background:transparent">
+                        <option value="bn">বাংলা</option>
+                        <option value="en">English</option>
+                    </select>
+                    <button id="darkToggle" class="btn ghost" style="min-width:44px">🌙</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid">
+            <section class="card">
+                <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px">
+                    <h2 id="sectionTitle" style="margin:0;font-size:1rem">শিশু যোগ করুন</h2>
+                    <div style="display:flex;gap:8px;align-items:center">
+                        <input id="searchInput" class="search" placeholder="টিকা / শিশু খুঁজুন..." />
+                        <select id="filterSelect" style="width:150px">
+                            <option value="all">All</option>
+                            <option value="completed">Completed</option>
+                            <option value="pending">Pending</option>
+                            <option value="overdue">Overdue</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display:grid;gap:8px">
+                    <div>
+                        <label id="lblName">শিশুর নাম</label>
+                        <input id="babyName" placeholder="উদাহরণ: নূর আহমেদ" />
+                    </div>
+                    <div style="display:flex;gap:8px">
+                        <div style="flex:1">
+                            <label id="lblDob">জন্ম তারিখ</label>
+                            <input id="babyDob" type="date" />
+                        </div>
+                        <div style="width:120px">
+                            <label id="lblGender">লিঙ্গ</label>
+                            <select id="babyGender">
+                                <option value="">চিহ্নিত করুন</option>
+                                <option value="male">ছেলে</option>
+                                <option value="female">মেয়ে</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:8px">
+                        <button id="addBaby" class="btn">শিশু যোগ করুন</button>
+                        <button id="clearAll" class="btn ghost">সব মুছুন</button>
+                        <button id="exportCsv" class="btn ghost">CSV</button>
+                    </div>
+                </div>
+
+                <div class="baby-list" id="babyList"></div>
+
+                <div style="margin-top:12px" class="card">
+                    <h3 id="progressTitle" style="margin:0 0 8px 0">Progress</h3>
+                    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+                        <div style="flex:1">
+                            <div class="progress"><i id="progressBar" style="width:0%"></i></div>
+                        </div>
+                        <div id="progressText" style="min-width:90px;text-align:right;color:var(--muted)">0% completed
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <aside class="card">
+                <h3 id="asideTitle" style="margin:0 0 8px 0">শিডিউল ও ক্যালেন্ডার</h3>
+                <div style="display:flex;gap:8px;margin-bottom:8px">
+                    <select id="templateSelect">
+                        <option value="standard">ডিফল্ট (বেসিক)</option>
+                        <option value="bangladesh">Bangladesh EPI</option>
+                    </select>
+                    <button id="notifyPerm" class="btn ghost">নোটিফিকেশন</button>
+                </div>
+
+                <div style="margin-top:8px">
+                    <label>কাস্টম টিকা যোগ</label>
+                    <input id="customVaccineName" placeholder="টিকা নাম (Rotavirus)" />
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">
+                        <input id="customVaccineWeeks" placeholder="জন্মের কত সপ্তাহ পরে" type="number" />
+                        <button id="addCustomVaccine" class="btn">যোগ করুন</button>
+                    </div>
+                </div>
+
+                <hr style="margin:12px 0;border:none;border-top:1px solid rgba(0,0,0,0.04)" />
+
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                    <div>
+                        <strong id="calendarMonth">Month</strong>
+                        <div class="small" id="calendarYear">Year</div>
+                    </div>
+                    <div style="display:flex;gap:6px">
+                        <button id="prevMonth" class="btn ghost">‹</button>
+                        <button id="nextMonth" class="btn ghost">›</button>
+                    </div>
+                </div>
+
+                <div style="margin-top:10px;display:flex;gap:8px">
+                    <button id="syncGoogle" class="btn ghost">Connect & Sync Google</button>
+                    <button id="exportIcal" class="btn ghost">Export iCal</button>
+                </div>
+
+                <div style="margin-top:10px" id="calendar" class="calendar"></div>
+            </aside>
+        </div>
+
+        <section class="card vaccines" id="vaccinesSection">
+            <h2 id="vaccinesTitle" style="margin:0 0 8px 0">টিকা তালিকা</h2>
+            <div id="vaccineList"></div>
+        </section>
+
+        <footer>
+            এই অ্যাপটি কেবল রিমাইন্ডার সহায়তার জন্য। সঠিক টিকা শিডিউল জানতে স্থানীয় স্বাস্থ্যকেন্দ্রে যোগাযোগ করুন।
+        </footer>
+    </div>
+
+</body>
+</html>
