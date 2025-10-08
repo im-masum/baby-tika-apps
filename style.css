@@ -164,10 +164,13 @@ body.dark .v-item {
 }
 
 .btn {
+    display: inline-flex;
+    max-width: 100%;
+    width: 150px;
     background: var(--accent);
     color: #fff;
     border: none;
-    padding: 10px 50px;
+    padding: min(1rem, 8%) 1rem;
     border-radius: 8px;
     cursor: pointer;
     transition: opacity .12s
