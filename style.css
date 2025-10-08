@@ -74,7 +74,8 @@ h1 {
 
 .card {
     display: flex;
-    width: 70%;
+    flex-direction: column;
+    width: 100%;
     max-width: 100%;
     justify-content: space-between;
     background: var(--card);
