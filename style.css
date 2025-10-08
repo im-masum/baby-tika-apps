@@ -168,33 +168,35 @@ body.dark .v-item {
     align-items: center;
     justify-content: center;
     width: 150px;
-    background: var(--accent);
-    color: #fff;
+    background: var(--card);
+    color: var(--accent);
     border: none;
     padding: min(.5rem, 4%) .5rem;
     border-radius: 8px;
     cursor: pointer;
     transition: opacity .12s;
     font-size: min(.8rem, 2vw);
+    border: 1px solid rgba(14, 165, 164, .12)
 }
 
 .btn:hover {
     background-color: var(--card);
-    border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     color: var(--text);
-    opacity: .92
+    opacity: .92;
+    border: 1px solid rgba(14, 165, 164, .12);
+    border-color: var(--accent)
 }
 
 .btn.ghost {
-    background: transparent;
+    background: var(--card);
     color: var(--accent);
     border: 1px solid rgba(14, 165, 164, .12)
 }
 
 .btn.ghost:hover {
-    background: rgba(14, 165, 164, 0.12);
-    color: var(--accent);
+    background: var(--card);
+    color: var(--text);
     border-color: var(--accent)
 }
 
