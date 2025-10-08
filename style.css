@@ -4,7 +4,7 @@
     --muted: #6b7280;
     --accent: #05c4c4;
     --accent-2: #0a494a;
-    --text: #0f172a;
+    --text: #0c0c0c;
     --danger: #ef4444
 }
 
@@ -165,6 +165,8 @@ body.dark .v-item {
 
 .btn {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     background: var(--accent);
     color: #fff;
@@ -177,7 +179,7 @@ body.dark .v-item {
 }
 
 .btn:hover {
-    background-color: #162436;
+    background-color: var(--card);
     border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     color: var(--text);
