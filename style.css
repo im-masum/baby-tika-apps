@@ -58,6 +58,7 @@ header {
     background: var(--card);
     border: 1px solid rgba(154, 134, 134, 0.06);
 }
+
 .header-left {
     display: flex;
     gap: 12px;
@@ -67,6 +68,7 @@ header {
     overflow: hidden;
 
 }
+
 h1 {
     font-size: 1.25rem;
     margin: 0
@@ -89,7 +91,7 @@ h1 {
 
 .grid {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -165,7 +167,7 @@ body.dark .v-item {
     background: var(--accent);
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 10px 50px;
     border-radius: 8px;
     cursor: pointer;
     transition: opacity .12s
