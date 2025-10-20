@@ -133,7 +133,7 @@ h1 {
     gap: 20px;
 }
 
-.v-card{
+.v-card {
     display: flex;
     width: 100%;
     max-width: 100%;
@@ -170,18 +170,19 @@ label {
     color: var(--muted)
 }
 
-input,
-select,
-button {
+
+
+input, select {
     width: 100%;
     padding: 10px;
     border-radius: 12px;
-    font-size: 0.95rem;
+    font-size: min(.8rem, 2vw) .8rem;
     background: transparent;
     color: var(--text);
     border: 1px solid rgba(0, 0, 0, 0.06)
 }
-.button{
+
+.button {
     width: 100%;
     max-width: 100%;
     display: flex;
