@@ -175,11 +175,18 @@ select,
 button {
     width: 100%;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 0.95rem;
     background: transparent;
     color: var(--text);
     border: 1px solid rgba(0, 0, 0, 0.06)
+}
+.button{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+
 }
 
 .small {
