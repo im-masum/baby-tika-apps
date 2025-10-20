@@ -75,17 +75,21 @@ h1 {
     margin: 0
 }
 
-.controls{
+.controls {
     display: flex;
     width: 20%;
     max-width: 100%;
 }
-.lang-switch{
+
+.lang-switch {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #05c4c4;
-    padding: min(1rem, 8%) 1rem;
+    box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
+    padding: min(.5rem, 4%) .5rem;
+    border-radius: 12px;
+    transition: background .25s, box-shadow .25s;
+
 
 }
 
@@ -96,11 +100,12 @@ h1 {
     max-width: 100%;
     justify-content: space-between;
     background: var(--card);
-    padding: min(10px, 4vw) 16px;
+    padding: min(.8rem, 8%) .8rem;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(15, 23, 42, .06);
-    transition: background .25s, box-shadow .25s;
     align-items: center;
+    transition: background .25s, box-shadow .25s;
+    font-size: min(1rem, 2vw) 1rem;
 
 }
 
