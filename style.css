@@ -1,7 +1,7 @@
 :root {
     --bg: #c5c7ca;
     --card: #fff;
-    --muted: #6b7280;
+    --muted: #03506c;
     --accent: #025454;
     --accent-2: #0a494a;
     --text: #0c0c0c;
@@ -73,6 +73,19 @@ header {
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
     font-size: min(1rem, 2vw) 1rem;
 
+
+}
+
+.dark-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
+    padding: min(.5rem, 4%) .5rem;
+    border-radius: 12px;
+    transition: background .25s, box-shadow .25s;
+    border: none;
+    background: var(--accent);
 
 }
 
@@ -163,7 +176,7 @@ h1 {
 
 label {
     display: block;
-    font-size: .85rem;
+    font-size: min(1rem, 8%) .8rem;
     margin-bottom: 6px;
     color: var(--muted)
 }
