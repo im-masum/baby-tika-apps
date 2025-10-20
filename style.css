@@ -1,8 +1,8 @@
 :root {
-    --bg: #f7f9fc;
+    --bg: #c5c7ca;
     --card: #fff;
     --muted: #6b7280;
-    --accent: #05c4c4;
+    --accent: #025454;
     --accent-2: #0a494a;
     --text: #0c0c0c;
     --danger: #ef4444
@@ -11,7 +11,7 @@
 body.dark {
     --bg: #081124;
     --card: #0b1220;
-    --muted: #9aaac1;
+    --muted: #4fa2b9;
     --accent: #22d3ee;
     --accent-2: #60a5fa;
     --text: #e6eef8;
@@ -105,7 +105,7 @@ h1 {
 
 }
 
-.card-1{
+.card {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -123,6 +123,17 @@ h1 {
 }
 
 .box-1 {
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: min(1rem, 8%) 1rem;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+.box-2 {
     width: 100%;
     max-width: 100%;
     background-color: var(--bg);
