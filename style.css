@@ -64,20 +64,29 @@ header {
     display: flex;
     gap: 12px;
     align-items: center;
-    width: 70%;
+    width: 100%;
     max-width: 100%;
     overflow: hidden;
 
 }
-.controls{
-    display: flex;
-    background-color: #05c4c4;
-    width: 30%;
-    max-width: 100%;
-}
+
 h1 {
     font-size: 1.25rem;
     margin: 0
+}
+
+.controls{
+    display: flex;
+    width: 20%;
+    max-width: 100%;
+}
+.lang-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #05c4c4;
+    padding: min(1rem, 8%) 1rem;
+
 }
 
 .card {
