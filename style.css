@@ -62,11 +62,15 @@ header {
 
 .header-left {
     display: flex;
-    gap: 12px;
     align-items: center;
-    width: 100%;
+    padding: min(.5rem, 4%).5rem;
+    gap: 12px;
+    width: 70%;
     max-width: 100%;
     overflow: hidden;
+    background-color: rgb(93, 34, 34);
+    transition: background .25s, box-shadow .25s;
+    box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
 
 }
 
@@ -77,11 +81,17 @@ h1 {
 
 .controls {
     display: flex;
-    width: 20%;
+    align-items: center;
+    justify-content: space-between;
+    padding: min(.5rem, 4%).5rem;
+    width: 25%;
     max-width: 100%;
+
 }
 
 .lang-switch {
+    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,10 +116,14 @@ h1 {
     align-items: center;
     transition: background .25s, box-shadow .25s;
     font-size: min(1rem, 2vw) 1rem;
+    background-color: red;
 
 }
-.box-1{
+
+.box-1 {
     width: 50%;
+    max-width: 100%;
+    background-color: #05c4c4;
 }
 
 .grid {
