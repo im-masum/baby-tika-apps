@@ -63,14 +63,16 @@ header {
 .header-left {
     display: flex;
     align-items: center;
-    padding: min(.5rem, 4%).5rem;
-    gap: 12px;
+    justify-content: space-between;
+    padding: min(.5rem, 4%) 1.5rem;
     width: 70%;
     max-width: 100%;
     overflow: hidden;
-    background-color: rgb(93, 34, 34);
+    border-radius: 12px;
     transition: background .25s, box-shadow .25s;
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
+    font-size: min(1rem, 2vw) 1rem;
+
 
 }
 
