@@ -35,7 +35,7 @@ body {
     margin: 0 auto;
     background: var(--bg);
     color: var(--text);
-    padding: 18px;
+    padding: min(1rem, 8%) 1rem;
     transition: background .25s, color .25s
 }
 
@@ -47,14 +47,14 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 100%;
-    padding: min(14px, 4vw) 18px;
-    display: flex;
-    gap: 12px;
-    align-items: center;
+    padding: min(1rem, 8%) 1rem;
+    gap: 10px;
     margin-bottom: 18px;
-    justify-content: space-between;
     border-radius: 12px;
     background: var(--card);
     border: 1px solid rgba(154, 134, 134, 0.06);
@@ -64,12 +64,17 @@ header {
     display: flex;
     gap: 12px;
     align-items: center;
-    width: 90%;
+    width: 70%;
     max-width: 100%;
     overflow: hidden;
 
 }
-
+.controls{
+    display: flex;
+    background-color: #05c4c4;
+    width: 30%;
+    max-width: 100%;
+}
 h1 {
     font-size: 1.25rem;
     margin: 0
