@@ -242,17 +242,18 @@ h1 {
 
 }
 .calendar .cal-day {
-    flex: 1 1 calc(8% - 4px);
-    min-width: 80px;
+    /* flex: 1 1 calc(8% - 4px); */
+    min-width: 50px;
+    min-height: 50px;
     margin-bottom: 6px;
     border: 1px solid rgba(179, 168, 168, 0.04);
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    border-radius: 8px;
 
-}
-.calendar .cal-day:nth-child(7n+1) {
-    clear: left;
-    background-color: #03506c;
 }
 
 .grid {
