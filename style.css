@@ -226,6 +226,34 @@ h1 {
     gap: 20px;
     margin-top: 10px;
 }
+.calendar-actions .btn {
+    flex: 1;
+}
+
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    width: 100%;
+    background: var(--bg);
+
+}
+.calendar .cal-day {
+    flex: 1 1 calc(8% - 4px);
+    min-width: 80px;
+    margin-bottom: 6px;
+    border: 1px solid rgba(179, 168, 168, 0.04);
+    align-items: center;
+    justify-content: center;
+
+}
+.calendar .cal-day:nth-child(7n+1) {
+    clear: left;
+    background-color: #03506c;
+}
 
 .grid {
     width: 100%;
@@ -377,11 +405,7 @@ body.dark .v-item {
     background: linear-gradient(90deg, var(--accent), var(--accent-2));
 }
 
-.calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 6px
-}
+
 
 .cal-day {
     min-height: 64px;
