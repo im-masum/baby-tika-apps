@@ -235,24 +235,26 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
     margin-top: 12px;
     width: 100%;
     background: var(--bg);
 
 }
 .calendar .cal-day {
-    /* flex: 1 1 calc(8% - 4px); */
     min-width: 50px;
     min-height: 50px;
     margin-bottom: 6px;
-    border: 1px solid rgba(179, 168, 168, 0.04);
+    /* border: 1px solid rgba(149, 143, 143, 0.981); */
     align-items: center;
     justify-content: center;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
-    padding: 6px;
+    padding: min(.5rem, 4%) .5rem;
     border-radius: 8px;
+    box-shadow: 4px 4px 20px rgba(173, 171, 171, 0.03);
+
 
 }
 
