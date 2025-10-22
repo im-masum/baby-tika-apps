@@ -498,6 +498,11 @@ footer {
         width: 100%;
         flex-direction: column;
     }
+    .controls {
+        width: 100%;
+        /* flex-direction: column; */
+        gap: 8px;
+    }
    
     h1 {
         font-size: 1.1rem;
