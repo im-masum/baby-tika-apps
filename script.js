@@ -74,7 +74,7 @@
                 $('syncGoogle').textContent = 'Connect & Sync Google';
                 $('exportIcal').textContent = 'Export iCal';
             } else {
-                $('appTitle').textContent = 'Baby টিকা রিমাইন্ডার';
+                $("appTitle").textContent = "শিশু টিকা রিমাইন্ডার";
                 $('appSubtitle').textContent = 'টিকা শিডিউল সংরক্ষণ করুন, রিমাইন্ডার পেয়ে যান';
                 $('sectionTitle').textContent = 'শিশু যোগ করুন';
                 $('lblName').textContent = 'শিশুর নাম';
