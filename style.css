@@ -500,7 +500,7 @@ footer {
     }
     .controls {
         width: 100%;
-        /* flex-direction: column; */
+        flex-direction: column;
         gap: 8px;
     }
    
