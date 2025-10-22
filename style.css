@@ -44,6 +44,7 @@ body {
     width: 100%;
     max-width: 100%;
     margin: 0 auto
+
 }
 
 header {
@@ -74,6 +75,11 @@ header {
     font-size: min(1rem, 2vw) 1rem;
     background: var(--bg);
 
+}
+.header-left iframe {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 
 }
 
@@ -276,6 +282,8 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 14px;
+    margin-bottom: 18px;
+    flex-direction: column;
 }
 
 label {
