@@ -182,6 +182,39 @@ h1 {
 
 }
 
+.calendar-controls{
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--bg);
+    color: var(--text);
+    padding: min(1rem, 8%) 1rem;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+.calendar-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: (min(1rem, 2vw) 1rem);
+}
+.calendar-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.calendar-btns .btn {
+    width: 40px;
+    padding: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
 .grid {
     width: 100%;
     max-width: 100%;
