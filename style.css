@@ -81,11 +81,11 @@ header {
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
-    padding: min(.5rem, 4%) .5rem;
+    padding: min(1rem, 8%) 1rem;
     border-radius: 12px;
     transition: background .25s, box-shadow .25s;
     border: none;
-    background: var(--accent);
+    background: var(--card);
 
 }
 
