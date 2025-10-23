@@ -603,6 +603,10 @@ footer {
         padding: 12px;
     }
 
+    .date-gender{
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 @media(max-width: 768px) {
