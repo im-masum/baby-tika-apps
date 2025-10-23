@@ -104,12 +104,13 @@ header {
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
-    padding: min(1rem, 8%) 1rem;
-    border-radius: 12px;
+    padding: min(.5rem, 4%) .5rem;
+    border-radius: 50%;
     transition: all ease .3s;
     border: none;
     background: var(--card);
     cursor: pointer;
+    font-size: large;
 
 }
 
@@ -138,7 +139,7 @@ h1 {
 }
 
 .lang-switch {
-    width: 50%;
+    width: 70%;
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -208,6 +209,26 @@ h1 {
     color: var(--text);
     display: flex;
     gap: 10px;
+
+}
+
+.filter-select {
+    max-width: 100%;
+    width: 200px;
+    background: var(--card);
+    color: var(--text);
+    border: none;
+    padding: min(1rem, 8%) 1rem;
+    border-radius: 8px;
+    font-size: min(.8rem, 2vw) .8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.filter-select option {
+    background: var(--card);
+    color: var(--text);
+    padding: min(1rem, 8%) 1rem;
+    font-size: min(1rem, 2vw) 1rem;
 
 }
 
@@ -547,9 +568,19 @@ footer {
         display: flex;
     }
     .v-card{
+        display: flex;
         flex-direction: column;
         gap: 12px;
     }
+   
+   h1 {
+        font-size: 1.2rem;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
 }
 
 @media(max-width: 768px) {
