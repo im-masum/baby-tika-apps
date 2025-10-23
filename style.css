@@ -231,19 +231,16 @@ h1 {
     width: 100%;
     max-width: 100%;
     gap: 10px;
+    flex: 1;
 }
 
 .date{
-    max-width: 100%;
-    width: 10%;
     margin-right: 8px;
     font-size: min(1.5rem, 4vw) 1rem;
 
 }
 
 .gender{
-    max-width: 100%;
-    width: 10%;
     font-size: min(1rem, 4vw) 1rem;
 }
 .gender select{
