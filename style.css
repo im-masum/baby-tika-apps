@@ -231,22 +231,25 @@ h1 {
     align-items: center;
     width: 100%;
     max-width: 100%;
+    gap: 10px;
 }
+
 .date{
     max-width: 100%;
-    width: 20%;
+    width: 12%;
     margin-right: 8px;
     font-size: min(1.5rem, 4vw) 1rem;
+
 }
 
 .gender{
     max-width: 100%;
-    width: 20%;
-    font-size: min(1.5rem, 4vw) 1rem;
+    width: 12%;
+    font-size: min(1rem, 4vw) 1rem;
 }
 .gender select{
     width: 100%;
-    font-size: min(1rem, 2vw) 1rem;
+    font-size: min(1rem, 4vw) 1rem;
     background: var(--card);
 }
 
@@ -370,9 +373,10 @@ h1 {
 
 label {
     display: block;
-    font-size: min(1rem, 8%) .8rem;
+    font-size: min(1.5rem, 8%) 1rem;
+    font-weight: 700;
     margin-bottom: 6px;
-    color: var(--muted)
+    color: var(--muted);
 }
 
 
@@ -381,8 +385,7 @@ input, select {
     max-width: 100%;
     width: 100%;
     padding: min(1rem, 8%) 1rem;
-    border-radius: 12px;
-    font-size: min(1rem, 2vw) 1rem;
+    font-size: min(1.5rem, 4vw) 1rem;
     background: transparent;
     color: var(--text);
     border: 1px solid rgba(0, 0, 0, 0.06);
