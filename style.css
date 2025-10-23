@@ -76,12 +76,27 @@ header {
     font-size: min(1rem, 2vw) 1rem;
     background: var(--bg);
 
+
 }
 .header-left img {
-    width: 150px;
+    width: 350px;
     height: 120px;
     border-radius: 12px;
 
+}
+
+.header-text {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    background: var(--card);
+    color: var(--text);
+    padding: min(1.6rem, 10%) 1.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .dark-toggle {
@@ -378,10 +393,6 @@ input, select {
     transform: translateY(-3px)
 }
 
-/* body.dark .v-item {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01))
-} */
-
 .done {
     text-decoration: line-through;
     opacity: .6
@@ -422,12 +433,6 @@ input, select {
     background: var(--card);
     color: var(--text);
     border-color: var(--accent)
-}
-
-.controls {
-    display: flex;
-    gap: 8px;
-    align-items: center;
 }
 
 .search {
@@ -498,12 +503,7 @@ footer {
     font-size: .9rem
 }
 
-.lang-switch {
-    display: flex;
-    gap: 6px;
-    align-items: center;
-    cursor: pointer;
-}
+
 
 
 
@@ -527,6 +527,11 @@ footer {
     .header-left {
         width: 100%;
         flex-direction: column;
+    }
+    .header-left img {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
     }
 
     .controls {
