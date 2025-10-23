@@ -581,10 +581,6 @@ footer {
 
     .controls {
         width: 100%;
-        flex-direction: column;
-        gap: 8px;
-        width: 100%;
-        height: 200px;
     }
 
     h1 {
