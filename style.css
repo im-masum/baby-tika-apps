@@ -445,7 +445,7 @@ input, select {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    /* width: 200px; */
     background: var(--card);
     color: var(--text);
     border: none;
