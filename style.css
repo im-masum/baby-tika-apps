@@ -77,9 +77,9 @@ header {
 
 }
 .header-left img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 150px;
+    height: 120px;
+    border-radius: 12px;
 
 }
 
@@ -90,10 +90,15 @@ header {
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
     padding: min(1rem, 8%) 1rem;
     border-radius: 12px;
-    transition: background .25s, box-shadow .25s;
+    transition: all ease .3s;
     border: none;
     background: var(--card);
+    cursor: pointer;
 
+}
+.dark-toggle:hover {
+    background: var(--muted);
+    
 }
 
 h1 {
@@ -105,8 +110,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: min(.5rem, 4%).5rem;
-    width: 25%;
+    padding: min(1.6rem, 16%)1.5rem;
+    width: 30%;
     max-width: 100%;
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
     border-radius: 12px;
@@ -116,17 +121,36 @@ h1 {
 }
 
 .lang-switch {
-    width: 100%;
+    width: 50%;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
-    padding: min(.5rem, 4%) .5rem;
+    padding: min(1rem, 8%) 1rem;
     border-radius: 12px;
     transition: background .25s, box-shadow .25s;
+    background: var(--bg);
 
 
+}
+.lang-select {
+
+    background: var(--card);
+    color: var(--text);
+    border: none;
+    padding: min(1rem, 8%) 1rem;
+    border-radius: 8px;
+    font-size: min(.8rem, 2vw) .8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.lang-select option {
+    background: var(--card);
+    color: var(--text);
+    padding: min(1rem, 8%) 1rem;
+    gap: 8px;
+    m
 }
 
 .card {
