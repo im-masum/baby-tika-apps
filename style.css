@@ -602,11 +602,15 @@ footer {
     .card {
         padding: 12px;
     }
-
-    .date-gender{
-        flex-direction: column;
-        gap: 12px;
+ .calendar {
+       display: block;
     }
+
+    .cal-day {
+        min-height: 54px;
+        padding: 5px;
+    }
+    
 }
 
 @media(max-width: 768px) {
