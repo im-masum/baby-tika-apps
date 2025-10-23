@@ -545,6 +545,10 @@ footer {
     .controls {
         width: 100%;
     }
+    .v-card{
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -599,8 +603,7 @@ footer {
     }
 
     .calendar {
-        grid-template-columns: repeat(7, 1fr);
-        gap: 4px;
+       display: block;
     }
 
     .cal-day {
@@ -632,6 +635,11 @@ footer {
         width: 100%;
     }
 
+    .v-card{
+        flex-direction: column;
+        gap: 8px;
+    }
+
     h1 {
         font-size: 1rem;
     }
@@ -654,8 +662,8 @@ footer {
     }
 
     .calendar {
-        grid-template-columns: repeat(7, 1fr);
-        gap: 2px;
+        display: block
+
     }
 
     .cal-day {
@@ -664,6 +672,6 @@ footer {
     }
 
     footer {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 }
