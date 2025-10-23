@@ -235,14 +235,14 @@ h1 {
 }
 
 .date{
-    width: 200px;
+    width: 250px;
     margin-right: 8px;
     font-size: min(1.5rem, 4vw) 1rem;
 
 }
 
 .gender{
-    width: 200px;
+    width: 250px;
     margin-left: 8px;
     font-size: min(1rem, 4vw) 1rem;
 }
@@ -445,11 +445,11 @@ input, select {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    /* width: 200px; */
+    width: 150px;
     background: var(--card);
     color: var(--text);
     border: none;
-    padding: min(1rem, 8%) 1rem;
+    padding: min(.5rem, 8%) 1rem;
     border-radius: 8px;
     cursor: pointer;
     transition: opacity .12s;
