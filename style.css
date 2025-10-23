@@ -177,7 +177,6 @@ h1 {
     justify-content: space-between;
     background: var(--card);
     padding: min(1rem, 8%) 1rem;
-    border-radius: 12px;
     box-shadow: 0 6px 18px rgba(15, 23, 42, .06);
     align-items: center;
     transition: background .25s, box-shadow .25s;
@@ -236,7 +235,7 @@ h1 {
 
 .date{
     max-width: 100%;
-    width: 12%;
+    width: 10%;
     margin-right: 8px;
     font-size: min(1.5rem, 4vw) 1rem;
 
@@ -244,7 +243,7 @@ h1 {
 
 .gender{
     max-width: 100%;
-    width: 12%;
+    width: 10%;
     font-size: min(1rem, 4vw) 1rem;
 }
 .gender select{
@@ -446,7 +445,7 @@ input, select {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 150px;
     background: var(--card);
     color: var(--text);
     border: none;
