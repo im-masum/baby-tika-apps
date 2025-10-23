@@ -56,7 +56,6 @@ header {
     padding: min(.8rem, 8%) .8rem;
     gap: 12px;
     margin-bottom: 18px;
-    border-radius: 12px;
     background: var(--card);
     border: 1px solid rgba(154, 134, 134, 0.06);
 }
@@ -69,7 +68,6 @@ header {
     width: 70%;
     max-width: 100%;
     overflow: hidden;
-    border-radius: 12px;
     transition: background .25s, box-shadow .25s;
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
     font-size: min(1rem, 2vw) 1rem;
@@ -128,25 +126,23 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: min(1.6rem, 16%)1.5rem;
+    padding: min(1.6rem, 8%)1rem;
     width: 30%;
     max-width: 100%;
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
-    border-radius: 12px;
     transition: background .25s, box-shadow .25s;
     background: var(--bg);
 
 }
 
 .lang-switch {
-    width: 70%;
+    width: 90%;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 18px rgba(105, 146, 241, 0.06);
     padding: min(1rem, 8%) 1rem;
-    border-radius: 12px;
     transition: background .25s, box-shadow .25s;
     background: var(--bg);
 
@@ -199,7 +195,6 @@ h1 {
     flex-direction: column;
     display: flex;
     gap: 20px;
-    border-radius: 12px;
 }
 
 .v-card {
@@ -214,12 +209,11 @@ h1 {
 
 .filter-select {
     max-width: 100%;
-    width: 200px;
+    width: 300px;
     background: var(--card);
     color: var(--text);
     border: none;
     padding: min(1rem, 8%) 1rem;
-    border-radius: 8px;
     font-size: min(.8rem, 2vw) .8rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -423,22 +417,22 @@ input, select {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 200px;
     background: var(--card);
-    color: var(--accent);
+    color: var(--text);
     border: none;
-    padding: min(.5rem, 4%) .5rem;
+    padding: min(1rem, 8%) 1rem;
     border-radius: 8px;
     cursor: pointer;
     transition: opacity .12s;
-    font-size: min(.8rem, 2vw);
+    font-size: min(1rem, 4vw) 1rem;
     border: 1px solid rgba(14, 165, 164, .12)
 }
 
 .btn:hover {
-    background-color: var(--card);
+    background-color: var(--muted);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    color: var(--text);
+    color: var(--card);
     opacity: .92;
     border: 1px solid rgba(14, 165, 164, .12);
     border-color: var(--accent)
@@ -446,13 +440,13 @@ input, select {
 
 .btn.ghost {
     background: var(--card);
-    color: var(--accent);
+    color: var(--text);
     border: 1px solid rgba(14, 165, 164, .12)
 }
 
 .btn.ghost:hover {
-    background: var(--card);
-    color: var(--text);
+    background: var(--muted);
+    color: var(--card);
     border-color: var(--accent)
 }
 
