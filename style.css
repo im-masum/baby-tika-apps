@@ -226,6 +226,32 @@ h1 {
 
 }
 
+.date-gender {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+.date{
+    max-width: 100%;
+    width: 20%;
+    margin-right: 8px;
+    font-size: min(1.5rem, 4vw) 1rem;
+}
+
+.gender{
+    max-width: 100%;
+    width: 20%;
+    font-size: min(1.5rem, 4vw) 1rem;
+}
+.gender select{
+    width: 100%;
+    font-size: min(1rem, 2vw) 1rem;
+    background: var(--card);
+}
+
+
+
 .box-2 {
     width: 100%;
     max-width: 100%;
