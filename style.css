@@ -135,7 +135,6 @@ h1 {
 
 }
 .lang-select {
-
     background: var(--card);
     color: var(--text);
     border: none;
@@ -145,13 +144,15 @@ h1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
 .lang-select option {
     background: var(--card);
     color: var(--text);
     padding: min(1rem, 8%) 1rem;
-    gap: 8px;
-    m
+    font-size: min(1rem, 2vw) 1rem;
+
 }
+
 
 .card {
     display: flex;
@@ -160,7 +161,7 @@ h1 {
     max-width: 100%;
     justify-content: space-between;
     background: var(--card);
-    padding: min(.8rem, 8%) .8rem;
+    padding: min(1rem, 8%) 1rem;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(15, 23, 42, .06);
     align-items: center;
