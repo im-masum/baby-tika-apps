@@ -702,3 +702,4 @@ window.addEventListener("load", () => {
   }, 500);
 });
 window.addEventListener("beforeunload", save);
+// ==== End of Google Calendar client-side OAuth & sync ====
