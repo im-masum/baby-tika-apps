@@ -697,7 +697,7 @@ footer {
     .calendar {
         display: flex;
         flex-wrap: wrap;
-        flex: 1;
+        /* flex: 1; */
         gap: 8px;
 
     }
