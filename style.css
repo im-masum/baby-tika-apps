@@ -489,18 +489,20 @@ input, select {
 }
 .progress-container {
     flex: 1;
-    margin-right: 12px; }
+    margin-right: 12px;
+}
 
 .progress {
     height: 10px;
     border-radius: 999px;
     background: rgba(0, 0, 0, 0.06);
-    overflow: hidden
+    overflow: hidden;
 }
 .progress-text {
     min-width: 90px;
     text-align: right;
-    color: var(--muted);
+    color: #0188f6;
+    font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .progress>i {
