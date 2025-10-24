@@ -367,6 +367,7 @@ h1 {
     flex: 1;
 }
 
+
 input, select {
     max-width: 100%;
     width: 100%;
@@ -480,6 +481,7 @@ input, select {
     border: 1px solid rgba(0, 0, 0, 0.06);
     font-size: .85rem
 }
+
 .progress-title {
     margin: 0 0 8px 0
 }
@@ -491,6 +493,7 @@ input, select {
     width: 100%;
     max-width: 100%
 }
+
 .progress-container {
     flex: 1;
     margin-right: 12px;
@@ -502,6 +505,7 @@ input, select {
     background: rgba(0, 0, 0, 0.06);
     overflow: hidden;
 }
+
 .progress-text {
     min-width: 90px;
     text-align: right;
@@ -622,6 +626,12 @@ footer {
         padding: 12px;
     }
 
+    .calendar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
 
 }
 
@@ -678,7 +688,9 @@ footer {
     }
 
     .calendar {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
     .cal-day {
