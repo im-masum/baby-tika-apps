@@ -637,8 +637,7 @@ footer {
         display: flex;
         flex: 1;
         flex-wrap: wrap;
-        padding: 4px;
-        background-color: #025454;
+    
     }
 
 
@@ -699,18 +698,15 @@ footer {
     .calendar {
         display: flex;
         flex-wrap: wrap;
+        flex: 1;
         gap: 8px;
 
     }
 
-
-
     .cal-day {
         display: flex;
         flex-wrap: wrap;
-        min-width: 44px;
-        min-height: 44px;
-        padding: 4px;
+        flex: 1;
 
     }
 }
@@ -765,12 +761,14 @@ footer {
     }
 
     .calendar {
-        display: block
+        display:flex;
+        flex-wrap: wrap;
     }
 
     .cal-day {
-        min-height: 32px;
-        padding: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
     }
 
     footer {
