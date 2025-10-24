@@ -76,19 +76,18 @@
 
                 <div class="baby-list" id="babyList"></div>
 
-                <div style="margin-top:12px" class="card">
-                    <h3 id="progressTitle" style="margin:0 0 8px 0">Progress</h3>
-                    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-                        <div style="flex:1">
+                <div class="card">
+                    <h3 id="progressTitle" class="progress-title">Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-container">
                             <div class="progress"><i id="progressBar" style="width:0%"></i></div>
                         </div>
-                        <div id="progressText" style="min-width:90px;text-align:right;color:var(--muted)">0%
+                        <div id="progressText" class="progress-text">0%
                             completed
                         </div>
                     </div>
                 </div>
             </section>
-
 
 
             <aside class="card">
@@ -110,7 +109,6 @@
                     </div>
                 </div>
 
-           
 
                 <div class="calendar-controls">
                     <div class="calendar-title">
@@ -135,10 +133,14 @@
             <h2 id="vaccinesTitle" style="margin:0 0 8px 0">টিকা তালিকা</h2>
             <div id="vaccineList"></div>
         </section>
-        
-        <footer>
+
+        <div class="warning">
             এই অ্যাপটি কেবল রিমাইন্ডার সহায়তার জন্য। সঠিক টিকা শিডিউল জানতে স্থানীয় স্বাস্থ্যকেন্দ্রে যোগাযোগ
             করুন।
+        </div>
+        <footer>
+            &copy; 2024 শিশু টিকা রিমাইন্ডার. সকল অধিকার সংরক্ষিত।
+            <br>Made by MASUM IQBAL CHY.
         </footer>
     </div>
 
