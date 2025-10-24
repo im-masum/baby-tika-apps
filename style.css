@@ -41,9 +41,8 @@ body {
 }
 
 .wrap {
-    max-width: 100%;
+    max-width: 1200px;
     width: 100%;
-    max-width: 100%;
     margin: 0 auto
 }
 
@@ -282,7 +281,7 @@ h1 {
 
 .calendar-controls {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     background-color: var(--bg);
     color: var(--text);
     padding: min(1rem, 8%) 1rem;
@@ -302,6 +301,8 @@ h1 {
     justify-content: center;
     gap: 4px;
     font-size: (min(1rem, 2vw) 1rem);
+    padding: min(1rem, 8%) 1rem;
+    background-color: #025454;
 }
 
 .calendar-btns {
@@ -550,6 +551,9 @@ input, select {
 }
 
 .warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(239, 68, 68, 0.12);
     color: var(--danger);
     padding: min(1rem, 8%) 1rem;
@@ -560,8 +564,13 @@ input, select {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
     background: var(--card);
-    margin-top: 16px;
+    margin-top: 12px;
     text-align: center;
     color: var(--muted);
     font-size: clamp(1rem, 2vw, 1.2rem);
