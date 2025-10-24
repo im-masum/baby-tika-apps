@@ -632,6 +632,15 @@ footer {
         gap: 8px;
     }
 
+    .cal-day {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 44px;
+        min-height: 44px;
+        padding: 4px;
+
+    }
+
 
 }
 
@@ -691,9 +700,14 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
+
     }
 
+
+
     .cal-day {
+        display: flex;
+        flex-wrap: wrap;
         min-width: 44px;
         min-height: 44px;
         padding: 4px;
