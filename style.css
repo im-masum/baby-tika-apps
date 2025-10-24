@@ -391,7 +391,11 @@ input, select {
 }
 
 .baby-list {
-    margin-top: 12px
+    width: 100%;
+    max-width: 100%;
+    padding: min(1rem, 8%) 1rem;
+    margin-top: 12px;
+    background: var(--bg);
 }
 
 .baby-item {
