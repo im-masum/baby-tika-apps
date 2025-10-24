@@ -217,6 +217,7 @@ h1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
 .filter-select option {
     background: var(--card);
     color: var(--text);
@@ -234,19 +235,20 @@ h1 {
     flex: 1;
 }
 
-.date{
+.date {
     width: 250px;
     margin-right: 8px;
     font-size: min(1.5rem, 4vw) 1rem;
 
 }
 
-.gender{
+.gender {
     width: 250px;
     margin-left: 8px;
     font-size: min(1rem, 4vw) 1rem;
 }
-.gender select{
+
+.gender select {
     width: 100%;
     font-size: min(1rem, 4vw) 1rem;
     background: var(--card);
@@ -280,12 +282,15 @@ h1 {
 
 .calendar-controls {
     width: 100%;
-    max-width: 100%;
+    max-width: 1200px;
     background-color: var(--bg);
     color: var(--text);
     padding: min(1rem, 8%) 1rem;
     flex-direction: column;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 10px;
 }
@@ -326,59 +331,41 @@ h1 {
     margin-top: 10px;
 }
 
+.calendar {
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--bg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: min(1rem, 8%) 1rem;
+
+}
+
+.cal-day {
+    min-width: 60px;
+    min-height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px;
+    border-radius: 8px;
+    background: var(--card);
+    cursor: pointer;
+    transition: transform .12s, box-shadow .12s;
+    margin: 0 auto;
+    padding: min(1rem, 8%) 1rem;
+}
+
 .calendar-actions .btn {
     flex: 1;
 }
-
-.calendar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 12px;
-    width: 100%;
-    background: var(--bg);
-
-}
-
-.calendar .cal-day {
-    min-width: 50px;
-    min-height: 50px;
-    margin-bottom: 6px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    padding: min(.5rem, 4%) .5rem;
-    border-radius: 8px;
-    box-shadow: 4px 4px 20px rgba(173, 171, 171, 0.03);
-
-
-}
-
-.grid {
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    margin-bottom: 18px;
-    flex-direction: column;
-    border-radius: 12px;
-}
-
-label {
-    display: block;
-    font-size: min(1.5rem, 8%) 1rem;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: var(--muted);
-}
-
-
 
 input, select {
     max-width: 100%;
@@ -503,14 +490,8 @@ input, select {
     background: linear-gradient(90deg, var(--accent), var(--accent-2));
 }
 
-
-
-.cal-day {
-    min-height: 64px;
-    border-radius: 8px;
-    padding: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    background: transparent
+.cal-day.upcoming {
+    border-color: var(--accent)
 }
 
 .cal-day.overdue {
@@ -540,10 +521,12 @@ input, select {
 }
 
 footer {
+    background: var(--card);
     margin-top: 16px;
     text-align: center;
     color: var(--muted);
-    font-size: .9rem
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    padding: min(1rem, 8%) 1rem;
 }
 
 
@@ -589,28 +572,22 @@ footer {
         width: 100%;
         display: flex;
     }
-    .v-card{
+
+    .v-card {
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
-   
-   h1 {
+
+    h1 {
         font-size: 1.2rem;
     }
 
     .card {
         padding: 12px;
     }
- .calendar {
-       display: block;
-    }
 
-    .cal-day {
-        min-height: 54px;
-        padding: 5px;
-    }
-    
+
 }
 
 @media(max-width: 768px) {
@@ -666,12 +643,14 @@ footer {
     }
 
     .calendar {
-       display: block;
+        display: block;
     }
 
     .cal-day {
+        min-width: 44px;
         min-height: 44px;
         padding: 4px;
+
     }
 }
 
@@ -698,7 +677,7 @@ footer {
         width: 100%;
     }
 
-    .v-card{
+    .v-card {
         flex-direction: column;
         gap: 8px;
     }
@@ -726,7 +705,6 @@ footer {
 
     .calendar {
         display: block
-
     }
 
     .cal-day {
